@@ -8,10 +8,8 @@ import javax.swing.JOptionPane;
  * @version 1.0 03.10.2017
  */
 public class PopupDisplay
+
 {
-	/**
-	 * 
-	 */
 	/**
 	 * Displays a popup showing the supplied String to the user.
 	 * @param textToDisplay The text to be displayed.
