@@ -2,8 +2,16 @@ package stringlist.view;
 
 import javax.swing.JOptionPane;
 
+/**
+ * Simple GUI class using JOptionPane.
+ * @author Ethan Nielsen
+ * @version 1.0 03.10.2017
+ */
 public class PopupDisplay
 {
+	/**
+	 * 
+	 */
 	/**
 	 * Displays a popup showing the supplied String to the user.
 	 * @param textToDisplay The text to be displayed.
