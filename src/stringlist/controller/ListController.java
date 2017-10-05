@@ -53,11 +53,11 @@ public class ListController
 	
 	private void fillTheList()
 	{
-		kahoot fiftyStates = new kahoot("Kashish", 50);
-		kahoot mySecondKahoot = new kahoot("Ethan", 2);
-		kahoot bigQuiz = new kahoot("Derek", Integer.MAX_VALUE);
-		kahoot animalColor = new kahoot("Branton", 10);
-		kahoot presidents = new kahoot("Obama", 44);
+		kahoot fiftyStates = new kahoot("Kashish", 50, "The fifty United States");
+		kahoot mySecondKahoot = new kahoot("Ethan", 2, "The Double data type");
+		kahoot bigQuiz = new kahoot("Derek", Integer.MAX_VALUE, "Everything...");
+		kahoot animalColor = new kahoot("Branton", 10, "All the colors of the animals");
+		kahoot presidents = new kahoot("Obama", 44, "The 44th president of the US");
 		myKahoots.add(fiftyStates);
 		myKahoots.add(mySecondKahoot);
 		myKahoots.add(bigQuiz);
