@@ -83,6 +83,8 @@ public class ListController
 //			myKahoots.add(mySecondKahoot);	
 //		}
 	private void changeTheList()
+
+	
 	{
 		popup.displayText("The current list size is:" + myKahoots.size());
 		kahoot removed =myKahoots.remove(3);
@@ -95,4 +97,14 @@ public class ListController
 		popup.displayText("The Kahoot by " + removed.getCreator() + " was replaced with one by: " + myKahoots.get(2).getCreator());
 		
 	}	
+	
+	public PopupDisplay getPopup()
+	{
+		return popup;
+	}
+	
+	public ArrayList<kahoot> getMyKahoots()
+	{
+		return (ArrayList<kahoot>) myKahoots;
+	}
 }
