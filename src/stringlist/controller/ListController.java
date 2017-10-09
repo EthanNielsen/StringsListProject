@@ -66,24 +66,26 @@ public class ListController
 		kahoot bigQuiz = new kahoot("Derek", Integer.MAX_VALUE, "Everything...");
 		kahoot animalColor = new kahoot("Branton", 10, "All the colors of the animals");
 		kahoot presidents = new kahoot("Obama", 44, "The 44th president of the US");
+		kahoot thebest = new kahoot("haha! 1 more", 1, " The last and final test!");
 		myKahoots.add(fiftyStates);
 		myKahoots.add(mySecondKahoot);
 		myKahoots.add(bigQuiz);
 		myKahoots.add(animalColor);
 		myKahoots.add(presidents);
-		
-		kahoot thebest = new kahoot("haha! 1 more", 1, " The last and final test!");
 		myKahoots.add(thebest);
 		
-		
+		myKahoots.add(4, fiftyStates);
 	}
+	
+	
+	
+	
 //		for (int kahoot = 0; kahoot < 5; kahoot +=1)
 //		{
 //			kahoot mySecondKahoot = new kahoot("Ethan", 2);
 //			myKahoots.add(mySecondKahoot);	
 //		}
 	private void changeTheList()
-
 	
 	{
 		popup.displayText("The current list size is:" + myKahoots.size());
