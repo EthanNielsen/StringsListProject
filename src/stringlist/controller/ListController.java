@@ -71,6 +71,12 @@ public class ListController
 		myKahoots.add(bigQuiz);
 		myKahoots.add(animalColor);
 		myKahoots.add(presidents);
+		
+		popup.displayText("He I'm gonna add 1 more list!");
+		kahoot thebest = new kahoot("haha! 1 more", 1, " The last and final test!");
+		myKahoots.add(thebest);
+		
+		
 	}
 //		for (int kahoot = 0; kahoot < 5; kahoot +=1)
 //		{
@@ -90,4 +96,13 @@ public class ListController
 		popup.displayText("The Kahoot by " + removed.getCreator() + " was replaced with one by: " + myKahoots.get(2).getCreator());
 		
 	}	
+	
+	private void getTheList()
+	{
+		popup.displayText("He I'm gonna add 1 more list!"
+		kahoot thebest = new kahoot("haha! 1 more", 1, " The last and final test!");
+		kahoot.add(thebest);
+	}
+	
+	
 }
