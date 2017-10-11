@@ -1,6 +1,6 @@
-package stringlist.model;
+package tools.model;
 
-public class kahoot
+public class Kahoot
 {
 	private int questionCount;
 	private int level;
@@ -9,7 +9,7 @@ public class kahoot
 	private String topic;
 	
 	
-	public kahoot()
+	public Kahoot()
 	{
 		this.questionCount = 0;
 		this.level = 1;
@@ -18,7 +18,7 @@ public class kahoot
 		this.topic = "some topic";
 	}
 	
-	public kahoot(String creator, int questionCount, String topic)
+	public Kahoot(String creator, int questionCount, String topic)
 	{
 		this();
 		this.creator = creator;

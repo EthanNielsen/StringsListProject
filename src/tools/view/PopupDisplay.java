@@ -1,4 +1,4 @@
-package stringlist.view;
+package tools.view;
 
 import javax.swing.JOptionPane;
 

@@ -1,25 +1,25 @@
-package stringlist.controller;
+package tools.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import stringlist.model.kahoot;
-import stringlist.view.PopupDisplay;
+import tools.model.Kahoot;
+import tools.view.PopupDisplay;
 
-public class ListController
+public class Controller
 {
-	private List<kahoot> myKahoots;
+	private List<Kahoot> myKahoots;
 	private PopupDisplay popup;
 	
-	public ListController()
+	public Controller()
 	{
-		myKahoots = new ArrayList<kahoot>();
+		myKahoots = new ArrayList<Kahoot>();
 		popup = new PopupDisplay();
 	}
 	
 	public void start()
 	{
-		kahoot myFirstKahoot = new kahoot();
+		Kahoot myFirstKahoot = new Kahoot();
 		myKahoots.add(myFirstKahoot);
 		fillTheList();
 		showTheList();
@@ -32,7 +32,7 @@ public class ListController
 		{
 			currentCreator = myKahoots.get(index).getCreator();
 			
-			kahoot currentKahoot = myKahoots.get(index);
+			Kahoot currentKahoot = myKahoots.get(index);
 			String creator = currentKahoot.getCreator();
 			
 			popup.displayText(myKahoots.get(index).toString());
@@ -44,29 +44,30 @@ public class ListController
 					popup.displayText("wow nobody does a lot");
 				}
 			}
-			
-			String topic = currentKahoot.getTopic();
-			
-			for (int letter = currentKahoot.getTopic().length() - 1; letter >= 0; letter -= 1)
-			{
-				popup.displayText(topic.substring(letter, letter + 1));
-			}
-		}
-		
-		for (int currentLetterIndex = 0; currentLetterIndex < currentCreator.length(); currentLetterIndex += 1)
-		{
-			popup.displayText(currentCreator.substring(currentLetterIndex, currentLetterIndex + 1));
+//			
+//			String topic = currentKahoot.getTopic();
+//			
+//			for (int letter = currentKahoot.getTopic().length() - 1; letter >= 0; letter -= 1)
+//			{
+//		
+//			popup.displayText(topic.substring(letter, letter + 1));
+//			}
+//		}
+//		
+//		for (int currentLetterIndex = 0; currentLetterIndex < currentCreator.length(); currentLetterIndex += 1)
+//		{
+//			popup.displayText(currentCreator.substring(currentLetterIndex, currentLetterIndex + 1));
 		}
 	}
 	
 	private void fillTheList()
 	{
-		kahoot fiftyStates = new kahoot("Kashish", 50, "The fifty United States");
-		kahoot mySecondKahoot = new kahoot("Ethan", 2, "The Double data type");
-		kahoot bigQuiz = new kahoot("Derek", Integer.MAX_VALUE, "Everything...");
-		kahoot animalColor = new kahoot("Branton", 10, "All the colors of the animals");
-		kahoot presidents = new kahoot("Obama", 44, "The 44th president of the US");
-		kahoot thebest = new kahoot("haha! 1 more", 1, " The last and final test!");
+		Kahoot fiftyStates = new Kahoot("Kashish", 50, "The fifty United States");
+		Kahoot mySecondKahoot = new Kahoot("Ethan", 2, "The Double data type");
+		Kahoot bigQuiz = new Kahoot("Derek", Integer.MAX_VALUE, "Everything...");
+		Kahoot animalColor = new Kahoot("Branton", 10, "All the colors of the animals");
+		Kahoot presidents = new Kahoot("Obama", 44, "The 44th president of the US");
+		Kahoot thebest = new Kahoot("haha! 1 more", 1, " The last and final test!");
 		myKahoots.add(fiftyStates);
 		myKahoots.add(mySecondKahoot);
 		myKahoots.add(bigQuiz);
@@ -89,13 +90,13 @@ public class ListController
 	
 	{
 		popup.displayText("The current list size is:" + myKahoots.size());
-		kahoot removed =myKahoots.remove(3);
+		Kahoot removed =myKahoots.remove(3);
 		popup.displayText("I removed the Kahoot by " + removed.getCreator());
 		popup.displayText("The li now has: " + myKahoots.size() + " items inside.");
 		myKahoots.add(0, removed);
 		
 		popup.displayText("The list is still: " + myKahoots.size() + " items big." );
-		removed = myKahoots.set(2, new kahoot());
+		removed = myKahoots.set(2, new Kahoot());
 		popup.displayText("The Kahoot by " + removed.getCreator() + " was replaced with one by: " + myKahoots.get(2).getCreator());
 		
 	}	
@@ -105,8 +106,8 @@ public class ListController
 		return popup;
 	}
 	
-	public ArrayList<kahoot> getMyKahoots()
+	public ArrayList<Kahoot> getMyKahoots()
 	{
-		return (ArrayList<kahoot>) myKahoots;
+		return (ArrayList<Kahoot>) myKahoots;
 	}
 }
