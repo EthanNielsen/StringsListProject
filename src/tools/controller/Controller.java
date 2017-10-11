@@ -98,6 +98,22 @@ public class Controller
 		
 	}	
 	
+	public int findMaxLength(ArrayList<String> myList)
+	{
+		int min = Integer.MAX_VALUE;
+		
+		for (int index = 0; index < myList.size(); index += 1)
+		{
+			if (myList.get(index).length() > min)
+			{
+				min = myList.get(index).length();
+			}
+		}
+		
+		return min;
+	}
+	
+	
 	public PopupDisplay getPopup()
 	{
 		return popup;
