@@ -77,15 +77,12 @@ public class Controller
 		
 		myKahoots.add(4, fiftyStates);
 	}
-	
-	
-	
-	
 //		for (int kahoot = 0; kahoot < 5; kahoot +=1)
 //		{
 //			kahoot mySecondKahoot = new kahoot("Ethan", 2);
 //			myKahoots.add(mySecondKahoot);	
 //		}
+	
 	private void changeTheList()
 	
 	{
