@@ -24,6 +24,8 @@ public class Kahoot
 		this.creator = creator;
 		this.questionCount = questionCount;
 		this.topic = topic;
+		this.level = level;
+		this.isJumble = isJumble;
 	}
 	
 	public String toString()
